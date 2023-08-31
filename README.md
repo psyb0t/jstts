@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is a fully client-side Text-to-Speech service using eSpeakNG. No server-side bullshit. Just clone this repo into your desired directory, and you're all set.
+This is a fully client-side, JavaScript-only Text-to-Speech (TTS) service using eSpeakNG. No server-side bullshit. Just clone this repo into your desired directory, and you're all set.
 
 ## Installation
 
