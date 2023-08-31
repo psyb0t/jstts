@@ -114,10 +114,15 @@ const getQueryParam = (name) => {
 
 // Initialize eSpeakNG
 tts = new eSpeakNG("js/espeakng.worker.js", () => {
-  const text = decodeURIComponent(getQueryParam("text"));
-  const rate = getQueryParam("rate") || 175;
+  let text = "Hello! I am JS TTS! Want sum fuk? Lemme smash!";
+  const rawText = getQueryParam("text");
+  if (rawText) {
+    text = decodeURIComponent(rawText);
+  }
+
+  const rate = getQueryParam("rate") || 150;
   const pitch = getQueryParam("pitch") || 50;
-  const voice = getQueryParam("voice") || "en";
+  const voice = getQueryParam("voice") || "en-us";
 
   tts.list_voices((voices) => {
     let voicesList = "";
