@@ -119,6 +119,23 @@ tts = new eSpeakNG("js/espeakng.worker.js", () => {
   const pitch = getQueryParam("pitch") || 50;
   const voice = getQueryParam("voice") || "en";
 
+  tts.list_voices((voices) => {
+    let voicesList = "";
+    let lineCount = 0;
+
+    for (const voice of voices) {
+      voicesList += `${voice.name}, `;
+      lineCount++;
+
+      if (lineCount >= 10) {
+        voicesList += "<br>";
+        lineCount = 0;
+      }
+    }
+
+    document.getElementById("supported-voices").innerHTML = voicesList;
+  });
+
   tts.set_rate(parseInt(rate));
   tts.set_pitch(parseInt(pitch));
   tts.set_voice(voice);
