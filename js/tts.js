@@ -138,7 +138,10 @@ tts = new eSpeakNG("js/espeakng.worker.js", () => {
       }
     }
 
-    document.getElementById("supported-voices").innerHTML = voicesList;
+    const supportedVoicesElement = document.getElementById("supported-voices");
+    if (supportedVoicesElement) {
+      supportedVoicesElement.innerHTML = voicesList;
+    }
   });
 
   tts.set_rate(parseInt(rate));
