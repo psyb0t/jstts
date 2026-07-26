@@ -28,3 +28,11 @@ You can customize the TTS output using the following query parameters:
 - `voice`: The voice to use for the speech (default is "en").
 
 Example URL: `http://localhost:8080?text=Hello&rate=175&pitch=50&voice=en`
+
+## License
+
+jstts is licensed under GPL-3.0-or-later. It bundles and calls the
+GPL-licensed eSpeakNG WASM engine (`js/espeakng.js`,
+`js/espeakng.worker.js`, `js/espeakng.worker.data`), which makes the
+shipped app a combined work under GPL-3.0-or-later. See [LICENSE](./LICENSE)
+and [THIRD_PARTY.md](./THIRD_PARTY.md) for details.
