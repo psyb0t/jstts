@@ -1,17 +1,3 @@
-jstts, as distributed, is licensed under the GNU General Public License
-version 3 or later (GPL-3.0-or-later).
-
-This is because jstts bundles and calls the GPL-licensed eSpeakNG WASM
-engine (js/espeakng.js, js/espeakng.worker.js, js/espeakng.worker.data)
-as part of the shipped web app. Since the app is API-coupled to the
-engine as a single combined work, the whole thing is distributed under
-GPL-3.0-or-later.
-
-See THIRD_PARTY.md for details on the bundled eSpeakNG components.
-
-Copyright (C) 2024-2026 Ciprian Mandache <https://ciprian.51k.eu> and
-eSpeakNG contributors.
-
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
