@@ -1,5 +1,6 @@
 # jstts
 
+[![CI](https://github.com/psyb0t/jstts/actions/workflows/pipeline.yml/badge.svg?branch=master)](https://github.com/psyb0t/jstts/actions/workflows/pipeline.yml)
 [![version](https://raw.githubusercontent.com/psyb0t/jstts/badges/version.svg)](https://github.com/psyb0t/jstts/releases)
 [![license](https://raw.githubusercontent.com/psyb0t/jstts/badges/license.svg)](LICENSE)
 
