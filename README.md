@@ -1,5 +1,8 @@
 # jstts
 
+[![version](https://raw.githubusercontent.com/psyb0t/jstts/badges/version.svg)](https://github.com/psyb0t/jstts/releases)
+[![license](https://raw.githubusercontent.com/psyb0t/jstts/badges/license.svg)](LICENSE)
+
 ![jstts](./assets/jstts.jpg)
 
 ## Overview
